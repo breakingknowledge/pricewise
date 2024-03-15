@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
+class ComposerStaticInitca2b4f48c11e08670e9e38f74f6a8efd
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -339,8 +339,8 @@ class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -550,17 +550,22 @@ class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
         'App\\Http\\Controllers\\Admin\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/AuthenticatedSessionController.php',
         'App\\Http\\Controllers\\Admin\\Auth\\NewPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/NewPasswordController.php',
         'App\\Http\\Controllers\\Admin\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/Auth/PasswordResetLinkController.php',
+        'App\\Http\\Controllers\\Admin\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CategoryController.php',
         'App\\Http\\Controllers\\Admin\\CustomerController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CustomerController.php',
-        'App\\Http\\Controllers\\Admin\\DriverController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/DriverController.php',
         'App\\Http\\Controllers\\Admin\\EditProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EditProfileController.php',
         'App\\Http\\Controllers\\Admin\\EventController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EventController.php',
+        'App\\Http\\Controllers\\Admin\\FeatureController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/FeatureController.php',
         'App\\Http\\Controllers\\Admin\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/HomeController.php',
         'App\\Http\\Controllers\\Admin\\MailChimpController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/MailChimpController.php',
         'App\\Http\\Controllers\\Admin\\NewsletterTemplateController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/NewsletterTemplateController.php',
         'App\\Http\\Controllers\\Admin\\PermissionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PermissionController.php',
         'App\\Http\\Controllers\\Admin\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PostController.php',
+        'App\\Http\\Controllers\\Admin\\ProviderController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProviderController.php',
         'App\\Http\\Controllers\\Admin\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RoleController.php',
         'App\\Http\\Controllers\\Admin\\SettingController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SettingController.php',
+        'App\\Http\\Controllers\\Admin\\TvController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TvController.php',
+        'App\\Http\\Controllers\\Admin\\TvInternetController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TvInternetController.php',
+        'App\\Http\\Controllers\\Admin\\TvProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TvProductController.php',
         'App\\Http\\Controllers\\Api\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/UserController.php',
         'App\\Http\\Controllers\\Api\\UserDetailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/UserDetailController.php',
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
@@ -585,17 +590,21 @@ class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Auth\\AdminLoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/AdminLoginRequest.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
+        'App\\Http\\Resources\\tv_features' => __DIR__ . '/../..' . '/app/Http/Resources/tv_features.php',
         'App\\Mail\\AdminForgotPwMail' => __DIR__ . '/../..' . '/app/Mail/AdminForgotPwMail.php',
         'App\\Models\\Admin' => __DIR__ . '/../..' . '/app/Models/Admin.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\Country' => __DIR__ . '/../..' . '/app/Models/Country.php',
-        'App\\Models\\Driver' => __DIR__ . '/../..' . '/app/Models/Driver.php',
         'App\\Models\\Event' => __DIR__ . '/../..' . '/app/Models/Event.php',
-        'App\\Models\\EventDoc' => __DIR__ . '/../..' . '/app/Models/EventDoc.php',
         'App\\Models\\MailchimpSetting' => __DIR__ . '/../..' . '/app/Models/MailchimpSetting.php',
         'App\\Models\\NewsletterTemplate' => __DIR__ . '/../..' . '/app/Models/NewsletterTemplate.php',
         'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
+        'App\\Models\\Provider' => __DIR__ . '/../..' . '/app/Models/Provider.php',
         'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
+        'App\\Models\\TvFeature' => __DIR__ . '/../..' . '/app/Models/TvFeature.php',
+        'App\\Models\\TvInternetProduct' => __DIR__ . '/../..' . '/app/Models/TvInternetProduct.php',
+        'App\\Models\\TvProduct' => __DIR__ . '/../..' . '/app/Models/TvProduct.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\WebsiteSetting' => __DIR__ . '/../..' . '/app/Models/WebsiteSetting.php',
         'App\\Policies\\PostPolicy' => __DIR__ . '/../..' . '/app/Policies/PostPolicy.php',
@@ -729,6 +738,7 @@ class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\AdminSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\PermissionTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PermissionTableSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5664,10 +5674,10 @@ class ComposerStaticInite446691f4af6de2643ba79401fa51bb5
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite446691f4af6de2643ba79401fa51bb5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite446691f4af6de2643ba79401fa51bb5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite446691f4af6de2643ba79401fa51bb5::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite446691f4af6de2643ba79401fa51bb5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitca2b4f48c11e08670e9e38f74f6a8efd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitca2b4f48c11e08670e9e38f74f6a8efd::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitca2b4f48c11e08670e9e38f74f6a8efd::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitca2b4f48c11e08670e9e38f74f6a8efd::$classMap;
 
         }, null, ClassLoader::class);
     }
