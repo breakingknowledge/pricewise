@@ -28,7 +28,7 @@ class TvInternetController extends Controller
      */
     public function index()
     {
-        $objTv = TvInternetProduct::latest()->get();
+    	$objTv = TvInternetProduct::latest()->get();
         return view('admin.tvproducts.index', compact('objTv'));
     }
 
@@ -243,7 +243,7 @@ class TvInternetController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -273,12 +273,12 @@ class TvInternetController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function tv_update(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $objTv = TvInternetProduct::where('id', $id)->first();
         //jhdjhddjhf
             $objTv->title = $request->title;
-            $objTv->content = $request->description;
+            $objTv->content = $request->description3;
             $objTv->commission = $request->commission;
             $objTv->commission_type = $request->commission_type;
             $objTv->avg_delivery_time = $request->avg_delivery_time;
@@ -299,7 +299,7 @@ class TvInternetController extends Controller
             $objTv->slug = $request->link;
             $objTv->provider = $request->provider;
         if ($request->file('image') == null || $request->file('image') == '') {
-            $image = $objTv->product_image;
+            $image = $objTv->image;
         } else {
             $destinationPath = '/images';
             $imgfile = $request->file('image');
@@ -311,7 +311,8 @@ class TvInternetController extends Controller
          $objTv->image = $image;
         if ($objTv->save()) {
             Toastr::success('Tv Product Updated Successfully', '', ["positionClass" => "toast-top-right"]);
-            return response()->json(["status" => true, "redirect_location" => route("admin.internet-tv.index")]);
+            //return response()->json(["status" => true, "redirect_location" => route("admin.internet-tv.index")]);
+            return redirect()->route('admin.internet-tv.index')->with(Toastr::success('Tv Product Updated Successfully', '', ["positionClass" => "toast-top-right"]));
         } else {
             $message = array('message' => 'Something went wrong !! Please Try again later', 'title' => '');
             return response()->json(["status" => false, 'message' => $message]);
